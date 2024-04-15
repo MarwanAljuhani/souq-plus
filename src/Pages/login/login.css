@@ -1,0 +1,64 @@
+.signin-container {
+  background-color: #1a252f;
+  color: #ecf0f1;
+  padding: 40px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.signin-container h2 {
+  text-align: center;
+}
+.signin-container form {
+  display: flex;
+  flex-direction: column;
+}
+.signin-container form div {
+  margin-bottom: 20px;
+}
+.signin-container form div label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.signin-container form div input[type=text],
+.signin-container form div input[type=email],
+.signin-container form div input[type=password],
+.signin-container form div input[type=file] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1c82ad;
+  border-radius: 4px;
+  background-color: #1a252f;
+  color: #ecf0f1;
+  transition: border-color 0.2s;
+}
+.signin-container form div input[type=text]:focus,
+.signin-container form div input[type=email]:focus,
+.signin-container form div input[type=password]:focus,
+.signin-container form div input[type=file]:focus {
+  outline: none;
+  border-color: #1c82ad;
+}
+.signin-container form div button[type=submit] {
+  background-color: #1c82ad;
+  color: #ecf0f1;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.signin-container form div button[type=submit]:hover {
+  background-color: #156181;
+}
+.signin-container form .signinBtn {
+  display: grid;
+  justify-content: center;
+}/*# sourceMappingURL=login.css.map */

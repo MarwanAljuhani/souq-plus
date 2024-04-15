@@ -1,0 +1,20 @@
+$primaryColor: #1c82ad; // Teal
+$backgroundColor: #1a252f; // Dark Gray
+$accentColor: #2f58cd; // Alizarin Crimson
+$textColor: #ecf0f1; // Light Gray
+$originalColor1: #303030;
+$originalColor2: #181818;
+$targetColor: #1a252f;
+
+$adjustedColor1: mix(
+  $originalColor1,
+  $targetColor,
+  30%
+);
+$adjustedColor2: mix(
+  $originalColor2,
+  $targetColor,
+  30%
+); 
+
+

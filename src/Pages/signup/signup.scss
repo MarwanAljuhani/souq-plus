@@ -1,0 +1,96 @@
+@import "../../styles/variables.scss";
+
+// Assuming $fontSizeBase is set to 16px
+
+.signup-container {
+  background-color: $backgroundColor;
+
+  margin-left: 4rem;
+  color: $textColor;
+  max-width: 52.1875rem; // 830px / 16px
+  border-radius: 0.5rem; // 8px / 16px
+  box-shadow: 0 0 1.625rem rgba(0, 0, 0, 0.2); // 10px / 16px
+  position: relative;
+  top: 50%;
+  left: 44.4%;
+  transform: translate(-45%, -50%);
+  display: flex;
+  min-height: 38.3rem;
+
+  .signupLeftSection {
+    padding: 2.5rem; // 40px / 16px
+    min-width: 35%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.25rem; // 20px / 16px
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-bottom: 1.25rem; // 20px / 16px
+
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 0.3125rem; // 5px / 16px
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"] {
+          width: 100%;
+          padding: 0.625rem; // 10px / 16px
+          border: none;
+          border: 1px solid $primaryColor;
+          border-radius: 0.25rem; // 4px / 16px
+          background-color: $backgroundColor;
+          color: $textColor;
+      
+          transition: border-color 0.2s;
+
+          &:focus {
+            outline: none;
+            border-color: $primaryColor;
+          }
+        }
+
+        button[type="submit"] {
+          background-color: $primaryColor;
+          color: $textColor;
+          border: none;
+          padding: 0.625rem; // 10px / 16px
+          border-radius: 0.25rem; // 4px / 16px
+          cursor: pointer;
+          font-weight: bold;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: darken($primaryColor, 10%);
+          }
+        }
+      }
+      .error-message {
+        font-size: 14px;
+      }
+      .signupBtn {
+        display: grid;
+        justify-content: center;
+      }
+    }
+  }
+
+  .signupRightSection {
+    img {
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}

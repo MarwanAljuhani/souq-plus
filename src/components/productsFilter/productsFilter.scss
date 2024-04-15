@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.filterContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .filter {
+    margin-top: 10rem;
+    color: $textColor;
+    display: flex;
+    margin-left: 10rem;
+
+    .filterItem {
+      margin-right: 2rem;
+      input,
+      select {
+        margin-right: 1rem;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 1px;
+        background-color: white;
+      }
+
+      select {
+        width: 10rem;
+
+        text-align: left;
+        align-items: left;
+      }
+
+      .priceRange {
+        display: flex;
+        align-items: center;
+
+        .minRange,
+        .maxRange {
+          width: 10rem;
+          margin-right: 0.5rem;
+        }
+      }
+      .applyBtn {
+        padding: 0.5rem 2rem;
+        background-color: $accentColor;
+        border:black 1px solid;
+        &:hover{
+          cursor: pointer;
+          background-color: darken($accentColor, 10%);
+        }
+      }
+    }
+  }
+}

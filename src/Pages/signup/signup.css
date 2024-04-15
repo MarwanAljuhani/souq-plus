@@ -1,0 +1,81 @@
+.signup-container {
+  background-color: #1a252f;
+  margin-left: 4rem;
+  color: #ecf0f1;
+  max-width: 52.1875rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1.625rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  left: 44.4%;
+  transform: translate(-45%, -50%);
+  display: flex;
+  min-height: 38.3rem;
+}
+.signup-container .signupLeftSection {
+  padding: 2.5rem;
+  min-width: 35%;
+}
+.signup-container .signupLeftSection h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.signup-container .signupLeftSection form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-container .signupLeftSection form div {
+  margin-bottom: 1.25rem;
+}
+.signup-container .signupLeftSection form div label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+}
+.signup-container .signupLeftSection form div input[type=text],
+.signup-container .signupLeftSection form div input[type=email],
+.signup-container .signupLeftSection form div input[type=password],
+.signup-container .signupLeftSection form div input[type=file] {
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  border: 1px solid #1c82ad;
+  border-radius: 0.25rem;
+  background-color: #1a252f;
+  color: #ecf0f1;
+  transition: border-color 0.2s;
+}
+.signup-container .signupLeftSection form div input[type=text]:focus,
+.signup-container .signupLeftSection form div input[type=email]:focus,
+.signup-container .signupLeftSection form div input[type=password]:focus,
+.signup-container .signupLeftSection form div input[type=file]:focus {
+  outline: none;
+  border-color: #1c82ad;
+}
+.signup-container .signupLeftSection form div button[type=submit] {
+  background-color: #1c82ad;
+  color: #ecf0f1;
+  border: none;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.signup-container .signupLeftSection form div button[type=submit]:hover {
+  background-color: #156181;
+}
+.signup-container .signupLeftSection form .error-message {
+  font-size: 14px;
+}
+.signup-container .signupLeftSection form .signupBtn {
+  display: grid;
+  justify-content: center;
+}
+.signup-container .signupRightSection img {
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}/*# sourceMappingURL=signup.css.map */

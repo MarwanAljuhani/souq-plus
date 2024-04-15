@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+
+$container-padding: 1rem 5rem 1rem 10rem;
+$product-width: 23rem;
+$product-height: 20rem;
+$box-shadow-color: rgb(0, 0, 0);
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $container-padding;
+  overflow-y: scroll;
+  max-height: 50rem;
+
+  .products {
+    width: $product-width;
+    height: $product-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+    margin: 0.5rem;
+    position: relative;
+    box-shadow: 0 0 10px $box-shadow-color;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+
+    .imgContainer {
+      padding: 30px 0 0 0;
+      height: 60%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 10rem;
+        max-height: 10rem;
+      }
+    }
+
+    .itemDetails {
+      margin: 0 1rem;
+
+      h1 {
+        font-size: 20px;
+        color: $textColor;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0;
+        color: $textColor;
+      }
+
+      h6 {
+        font-size: 15px;
+        margin: 1rem 0;
+        color: $textColor;
+      }
+
+      .addCartIcon {
+        position: absolute;
+        right: 1.5rem;
+        bottom: 1rem;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 0;
+        color: $accentColor;
+        transition: transform 0.3s ease;
+        background-color: transparent;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

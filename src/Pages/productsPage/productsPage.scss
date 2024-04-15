@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.productsPageContainer {
+  background-color: $backgroundColor;
+
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100;
+
+}

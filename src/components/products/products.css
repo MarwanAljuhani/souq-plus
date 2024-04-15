@@ -1,0 +1,68 @@
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 5rem 1rem 10rem;
+  overflow-y: scroll;
+  max-height: 50rem;
+}
+.productsContainer .products {
+  width: 23rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5%;
+  margin: 0.5rem;
+  position: relative;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+.productsContainer .products:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.productsContainer .products .imgContainer {
+  padding: 30px 0 0 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productsContainer .products .imgContainer img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+.productsContainer .products .itemDetails {
+  margin: 0 1rem;
+}
+.productsContainer .products .itemDetails h1 {
+  font-size: 20px;
+  color: #ecf0f1;
+  margin-bottom: 0.5rem;
+}
+.productsContainer .products .itemDetails p {
+  margin: 0;
+  color: #ecf0f1;
+}
+.productsContainer .products .itemDetails h6 {
+  font-size: 15px;
+  margin: 1rem 0;
+  color: #ecf0f1;
+}
+.productsContainer .products .itemDetails .addCartIcon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 0;
+  color: #2f58cd;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+}
+.productsContainer .products .itemDetails .addCartIcon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}/*# sourceMappingURL=products.css.map */

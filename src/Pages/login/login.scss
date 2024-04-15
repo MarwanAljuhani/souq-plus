@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.signin-container {
+  background-color: $backgroundColor;
+  color: $textColor;
+  padding: 40px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $primaryColor;
+        border-radius: 4px;
+        background-color: $backgroundColor;
+        color: $textColor;
+        transition: border-color 0.2s;
+
+        &:focus {
+          outline: none;
+          border-color: $primaryColor;
+        }
+      }
+
+      button[type="submit"] {
+        background-color: $primaryColor;
+        color: $textColor;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: darken($primaryColor, 10%);
+        }
+      }
+    }
+
+    .signinBtn {
+      display: grid;
+      justify-content: center;
+    }
+  }
+}

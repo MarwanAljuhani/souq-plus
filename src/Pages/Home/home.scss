@@ -1,0 +1,174 @@
+@import "../../styles/variables.scss";
+:root {
+  font-size: 16px; /* Set the root font size for rem units */
+}
+
+.homeContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 100vh;
+  overflow: hidden;
+
+  .leftSection {
+    background-color: $adjustedColor1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      font-size: 4rem; /* Adjust as needed */
+      position: absolute;
+      top: 16rem; /* Adjust as needed */
+      left: 22rem; /* Adjust as needed */
+      transform: translate(-50%, -50%);
+      color: white;
+      width: 25rem; /* Adjust as needed */
+      font-weight: 700;
+    }
+
+    .leftBottomBox {
+      position: absolute;
+      bottom: 20vh; /* Adjust as needed */
+      left: 0;
+      background-color: $adjustedColor2;
+      width: 21rem;
+      height: 8rem;
+      padding: 10px;
+
+      h6 {
+        font-size: 0.9375rem; /* Adjust as needed */
+        color: white;
+        position: relative;
+
+        left: 28%;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        position: relative;
+        top: -20%;
+        left: 28%;
+        font-size: 0.8125rem;
+
+        transform: translate(0, 0);
+        width: 20rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.708);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 25rem;
+      transform: translate(-50%, -50%) rotate(-15deg) ;
+      filter: drop-shadow(0px 0px 40px rgba(210, 209, 209, 0.39));
+    }
+    .price {
+      position: absolute;
+      bottom: 3%;
+      right: 51.1%;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 2px;
+      border: 0.1rem solid gray;
+      margin: 0;
+      padding: 1.1rem 3.4rem;
+    }
+  }
+
+  .rightSection {
+    background-color: $adjustedColor2;
+    .justDoIt {
+      width: 30vw;
+      height: 100vh;
+      font-size: 26vh;
+      font-weight: 600;
+      color: $adjustedColor1;
+    }
+    .rightBottomBox {
+      position: absolute;
+      bottom: 20vh;
+      right: 0;
+      background-color: $adjustedColor1;
+      width: 21rem;
+      height: 8rem;
+      padding: 10px;
+      display: flex;
+      transition: width 0.3s ease;
+
+      .text {
+        margin: 0;
+        padding: 0;
+
+        h6 {
+          margin-right: 11rem;
+
+          font-size: 0.9375rem;
+          color: white;
+          text-align: left;
+        }
+
+        p {
+          display: flex;
+          align-items: right;
+          justify-content: center;
+          position: relative;
+          top: -20%;
+          right: 67%;
+          font-size: 0.8125rem; /* Adjust as needed */
+          margin: 0;
+          transform: translate(0, 0);
+          width: 16rem;
+          font-weight: 600;
+          color: white;
+          text-align: right;
+          color: rgba(255, 255, 255, 0.708);
+        }
+      }
+      .rightArrow {
+        border-radius: 50%;
+        border: 1px solid rgb(255, 255, 255);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 35%;
+        right: 40%;
+        color: $accentColor;
+      
+        &:hover + .rightBottomBox {
+          width: 25rem; /* Adjust the width as needed */
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 3%;
+      left: 51.1%;
+      padding: 1.3rem 1.6rem;
+      background-color: $accentColor;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 2px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken($accentColor, 10%);
+      }
+    }
+  }
+}

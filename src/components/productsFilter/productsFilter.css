@@ -1,0 +1,45 @@
+.filterContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.filterContainer .filter {
+  margin-top: 10rem;
+  color: #ecf0f1;
+  display: flex;
+  margin-left: 10rem;
+}
+.filterContainer .filter .filterItem {
+  margin-right: 2rem;
+}
+.filterContainer .filter .filterItem input,
+.filterContainer .filter .filterItem select {
+  margin-right: 1rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1px;
+  background-color: white;
+}
+.filterContainer .filter .filterItem select {
+  width: 10rem;
+  text-align: left;
+  align-items: left;
+}
+.filterContainer .filter .filterItem .priceRange {
+  display: flex;
+  align-items: center;
+}
+.filterContainer .filter .filterItem .priceRange .minRange,
+.filterContainer .filter .filterItem .priceRange .maxRange {
+  width: 10rem;
+  margin-right: 0.5rem;
+}
+.filterContainer .filter .filterItem .applyBtn {
+  padding: 0.5rem 2rem;
+  background-color: #2f58cd;
+  border: black 1px solid;
+}
+.filterContainer .filter .filterItem .applyBtn:hover {
+  cursor: pointer;
+  background-color: #2546a4;
+}/*# sourceMappingURL=productsFilter.css.map */
